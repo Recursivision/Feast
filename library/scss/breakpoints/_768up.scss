@@ -1,0 +1,123 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+
+/*********************
+HEADER STYLES
+*********************/
+
+header {
+    height: 64px;
+    background-color:$dark-green;
+}
+
+
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+
+.logo {
+    float:left;
+    position:absolute;
+    top: -0.8em;
+    left: auto;
+    font-family: $sans-serif;
+    font-weight: 400;
+    height: 3.6em;
+   	background: $green;
+   	line-height: 1.3em;
+   	border: 1px dashed darken($dark-green, 6);
+   	border-radius: 10px;
+   	box-shadow: 0 0 0 4px $green, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+    padding: 1.3em 0.7em 0 0.7em;
+}
+
+.logo span {
+    
+    margin-top: 1em;
+}
+
+.js .main-nav {
+    position: relative;
+    overflow: visible;
+}
+.js .main-nav {
+    max-height: none;
+}
+.nav-toggle {
+    display: none;
+}
+.main-nav li {
+    float: left;
+    width: auto;
+}
+.main-nav ul {
+    float: right;
+    width:auto;
+}
+.main-nav a {
+    margin: 0;
+    padding: 1em;
+    float: left;
+    text-align: center;
+    border-bottom: 0;
+    background-color: $green;
+}
+.nav-collapse ul ul a {
+    display: none;
+}
+
+nav {
+    background-color: $green;
+}
+
+
+/*********************
+FOOTER STYLES
+*********************/
+
+/*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+.footer-links {
+	ul {
+		li {
+			a {
+				&:hover {}
+			}
+			/*
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/
+			ul {}
+		}
+	}
+} /* end .footer-links */
+
